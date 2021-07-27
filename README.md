@@ -15,3 +15,4 @@ npm install -g @angular/cli //instalar angular cli
 Set-ExecutionPolicy Bypass // bypass execution policy
 ng new nome-do-projeto // criar projeto
 ng v // versao do angular cli
+ng serve //servir o projeto ao browser
