@@ -1,6 +1,7 @@
 # angular
 
 COMANDOS GIT
+https://rogerdudler.github.io/git-guide/index.pt_BR.html
 
 git config --global user.name "RickDias"
 git config --global user.email "rick_pereira_dias@hotmail.com"
