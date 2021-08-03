@@ -17,3 +17,5 @@ Set-ExecutionPolicy Bypass // bypass execution policy
 ng new nome-do-projeto // criar projeto
 ng v // versao do angular cli
 ng serve //servir o projeto ao browser
+ng g(generate) c(component) components/home(caminho do componente) // criando um componente novo
+
