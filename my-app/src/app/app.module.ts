@@ -16,6 +16,7 @@ import { MatListModule }                from '@angular/material/list';
 import { IndexComponent }               from './views/index/index.component';
 
 import { BeneficiarioService }          from './services/beneficiario.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BeneficiarioService }          from './services/beneficiario.service';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
     
   ],
   providers: [ BeneficiarioService ],

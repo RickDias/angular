@@ -1,5 +1,5 @@
+import { BeneficiarioService } from './../../services/beneficiario.service';
 import { Component, OnInit }      from '@angular/core';
-import { BeneficiarioService }    from './services/beneficiario.service';
 
 @Component({
   selector: 'app-index',
@@ -10,14 +10,15 @@ export class IndexComponent implements OnInit {
 
   nome = "Gerson";
 
-  beneficiarios: Array<any>;
+  beneficiarios: Array<any> = [];
 
   constructor( private beneficiarioService: BeneficiarioService) { }
 
   ngOnInit(): void {
+   this.buscar();
   }
 
-  listar(){
-    this.beneficiarioService.listar().subscribe( );
+  buscar(){
+    this.beneficiarioService.buscar().subscribe( dados => this.beneficiarios = dados);
   }
 }
