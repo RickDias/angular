@@ -12,8 +12,10 @@ import { FooterComponent }  from './components/footer/footer.component';
 import { NavComponent }     from './components/nav/nav.component';
 
 import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { IndexComponent } from './views/index/index.component';
+import { MatListModule }                from '@angular/material/list';
+import { IndexComponent }               from './views/index/index.component';
+
+import { BeneficiarioService }          from './services/beneficiario.service';
 
 @NgModule({
   declarations: [
@@ -31,8 +33,9 @@ import { IndexComponent } from './views/index/index.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule
+    
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ BeneficiarioService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

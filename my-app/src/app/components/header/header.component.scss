@@ -1,23 +1,32 @@
+$backgroundColor: #00704A;
+
+@mixin displayContent($name, $position){
+    display: #{$name};
+    align-items: #{$position}
+}
+
 .header{
-    display: flex;
-    align-items: center;
+    @include displayContent("flex", center);
+    background-color: rgba($backgroundColor, 0.3);
+    @media screen and (max-width: 500px){
+        background-color: saddlebrown;
+    }
+
+    a{
+        @include displayContent("flex", center);
+        text-decoration: none;
+    }
+    i{
+        padding-right: 5px;
+    }
+    .logo{
+        max-height: 58px;
+    }
+    .title-group{
+        padding-left: 25px;
+    }
 
 }
 
-.header a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
 
-.header i{
-    padding-right: 5px;
-}
 
-.header .logo{
-    max-height: 58px;
-}
-
-.header .title-group{
-    padding-left: 25px;
-}

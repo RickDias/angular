@@ -1,1 +1,18 @@
-<p>index works!</p>
+<div class="container">
+
+    <h1>
+        <strong>{{ nome }}</strong>, tome um <span class="green bold">Starbucks</span>!
+        <i class="material-icons v-middle red">
+            yard
+        </i>
+    </h1>
+
+    <ul>
+        <li *ngFor="let benef of beneficiarios">
+
+            {{ benef.nr_cpf }} - {{ benef.nm_pessoa }}
+
+        </li>
+    </ul>
+    
+</div>

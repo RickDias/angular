@@ -1,15 +1,17 @@
+$backgroundColor: #00704A;
+
 .sidenav{
-    background-color: #00704A;
+    background-color: $backgroundColor;
     width: 200px;
+    a{
+        color: #fff;
+    }
+    i{
+        padding-right: 10px;
+    }
 }
 
-.sidenav a{
-    color: #fff;
-}
 
-.sidenav i{
-    padding-right: 10px;
-}
 
 .nav-list a{
     font-weight: bold;
@@ -17,4 +19,6 @@
 
 .content{
     display: flex;
+    background: linear-gradient( #ddd, #fff );
+    
 }
