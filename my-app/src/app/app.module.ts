@@ -13,6 +13,7 @@ import { NavComponent }     from './components/nav/nav.component';
 
 import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { IndexComponent } from './views/index/index.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
