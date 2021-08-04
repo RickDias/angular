@@ -17,4 +17,7 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  listar(){
+    this.beneficiarioService.listar().subscribe( );
+  }
 }
