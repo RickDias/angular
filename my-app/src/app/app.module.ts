@@ -9,10 +9,9 @@ import { HomeComponent }            from './components/home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent }  from './components/header/header.component';
 import { FooterComponent }  from './components/footer/footer.component';
-import { ContentComponent } from './components/content/content.component';
 import { NavComponent }     from './components/nav/nav.component';
 
-import { MatSidenav } from '@angular/material/sidenav';
+import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 
 @NgModule({
@@ -21,16 +20,15 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ContentComponent,
-    NavComponent,
-    MatListModule
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatSidenav
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
